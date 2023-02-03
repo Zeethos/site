@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт группы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="root">
+    <header class="header">
+      <img class="logo" src="./images/logo.svg" alt="Логотип" />
+      <ul class="menu">
+        <li>
+          <a href="#" class="menu__link active-link">Главная</a>
+        </li>
+        <li>
+          <a href="./pages/students.html" class="menu__link">Студенты</a>
+        </li>
+        <li>
+          <a href="./pages/about.html" class="menu__link">О курсе</a>
+        </li>
+        <li>
+          <a href="./pages/contacts.html" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+      <a class="button__main">Войти</a>
+      <div class="login-popup">
+        <h2 class="login-heading">Войти на сайт</h2>
+        <form class="login-form">
+          <input
+            class="login-input"
+            name="login"
+            type="text"
+            placeholder="Логин"
+            required
+          />
+          <input
+            class="login-password"
+            name="password"
+            type="password"
+            placeholder="Пароль"
+            required
+          />
+          <button class="popup-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+    <main class="content">
+      <h1 class="content__title">
+        Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!
+      </h1>
+      <img class="main-photo" src="./images/class2.png" alt="Главное фото" />
+      <div class="content__bottom">
+        <div class="content__bottom__text">
+          <p class="text__title__paragraph">Для кого этот курс</p>
+          <p class="paragraph">
+            Этот курс рассчитан на новичков, которые только начинают знакомство
+            с веб-разработкой. В начале курса вы узнаете о том, как устроен
+            Интернет и веб-сайты. Для обучения необходимо только владеть
+            компьютерной грамотностью (пользоваться браузером, создавать папки и
+            файлы, устанавливать программы).
+          </p>
+          <p class="text__title__paragraph">Чему вы научитесь</p>
+          <p class="paragraph">
+            На этом курсе вы узнаете, как устроены веб-сайты и как создавать их
+            с нуля. Изучите основы языков <span class="text__bold">HTML</span>,
+            <span class="text__bold">CSS</span> и немного
+            <span class="text__bold">JavaScript</span>. Мы вместе сверстаем сайт
+            нашей группы по этому макету. А затем вы
+            <span class="text__cursive__color__orange">сами</span> сверстаете
+            свои личные странички в качестве домашнего задания и мы выложим все
+            это на сервер.
+          </p>
+        </div>
+        <p class="content__bottom-learn">“Учимся вместе!”</p>
+      </div>
+    </main>
+    <footer class="footer__end">
+      <p class="copyright">
+        2022 &copy; <span class="footer__text">учебный центр</span>
+      </p>
+    </footer>
+    <script async src="./js/popup.js"></script>
+    <script async src="./js/server.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@import url('../styles/header.css');
+@import url('../styles/footer.css');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.root {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.active-link {
+    color: #213B7E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.content__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 30px 0 25px 38px;
+}
+
+.content {
+    margin: 0 auto;
+    flex-grow: 1;
+    max-width: 1202px;
+    width: 100%;
+}
+
+.position {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 519px;
+}
+
+.new__student {
+    position: absolute;
+    width: 94px;
+    height: 24px;
+    margin-right: 666px;
+    margin-bottom: 258px;
+    background: #3AA828;
+    border-radius: 20px;
+}
+
+.center__li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
