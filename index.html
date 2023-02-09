@@ -32,25 +32,33 @@
         </li>
       </ul>
       <a class="button__main">Войти</a>
-      <div class="login-popup">
-        <h2 class="login-heading">Войти на сайт</h2>
-        <form class="login-form">
-          <input
-            class="login-input"
-            name="login"
-            type="text"
-            placeholder="Логин"
-            required
-          />
-          <input
-            class="login-password"
-            name="password"
-            type="password"
-            placeholder="Пароль"
-            required
-          />
-          <button class="popup-button" type="submit">Войти</button>
-        </form>
+      <div class="overlay">
+        <div class="login-popup">
+          <img
+          src="./images/close.svg"
+          alt="Иконка закрытия"
+          class="popup__close"
+        />
+          <h2 class="login-heading">Войти на сайт</h2>
+          
+          <form class="login-form">
+            <input
+              class="login-input"
+              name="login"
+              type="text"
+              placeholder="Логин"
+              required
+            />
+            <input
+              class="login-password"
+              name="password"
+              type="password"
+              placeholder="Пароль"
+              required
+            />
+            <button class="popup-button" type="submit">Войти</button>
+          </form>
+        </div>
       </div>
     </header>
     <main class="content">
