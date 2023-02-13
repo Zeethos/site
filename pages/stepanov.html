@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О Себе</title>
+
+    <!-- Тег линк, который связывает html и css -->
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/styles__stepanov.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="../images/logo.svg" alt="Логотип" />
+      <ul class="menu">
+        <li>
+          <a href="../index.html" class="menu__link">Главная</a>
+        </li>
+        <li>
+          <a href="../pages/students.html" class="menu__link">Студенты</a>
+        </li>
+        <li>
+          <a href="../pages/about.html" class="menu__link">О курсе</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link active-link">Контакты</a>
+        </li>
+      </ul>
+      <a href="#" class="button__main">Войти</a>
+    </header>
+    <main class="root">
+      <!-- Заголовки, параграф и картинка -->
+
+      <div class="content">
+        <h1>Мой первый сайт. Основы веб - верстки.</h1>
+        <p>
+          <strong>Меня</strong> зовут Ст<em>е</em>панов Сергей Александрович и
+          это мой <q>первый сайт</q>!
+        </p>
+        <img class="me__photo" src="../images/Me__photo.jpg" alt="Это мое фото!" />
+        <h2>Немного о себе:</h2>
+        <p>Я ученик университета <strong>Innopolis</strong>.</p>
+
+        <!-- Новые теги - Список -->
+
+        <b>Список языков, которые мы изучаем на курсе:</b>
+        <ul type="square">
+          <li class="class">Html</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <b>Для обучения мне требуються:</b>
+        <ol>
+          <li class="class">Google Chrome</li>
+          <li>Visual Studio Code</li>
+          <li>Telegram</li>
+        </ol>
+      </div>
+
+      <!-- Таблица -->
+
+      <table class="tablica">
+        <tr class="new-class">
+          <th></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+        <tr>
+          <td id="sid">Игры</td>
+          <td colspan="3">да</td>
+          <td>да</td>
+          <td>да</td>
+        </tr>
+        <tr>
+          <td id="sid">Фитнес</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+        </tr>
+        <tr>
+          <td id="sid">Сон</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+        </tr>
+        <tr>
+          <td id="sid">Бег</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+          <td>да</td>
+        </tr>
+      </table>
+
+      <!-- форма авторизации с классом выравнивания по центру -->
+<b class="form__info">Пример формы:</b>
+      <form class="form" action method="post">
+        <label for="email">Форма авторизации</label>
+        <input
+          class="border-input"
+          type="email"
+          placeholder="example@example.ru"
+          required
+        />
+        <input
+          class="border-input"
+          type="password"
+          placeholder="Введите пароль"
+          required
+        />
+        <button type="submit">Войти</button>
+      </form>
+      <div class="content">
+      <p class="paragraph__one">
+        Живу я в городе КРАСНОЯРСКЕ, м-он Северный. Люблю свой район и очень рад
+        тому, что живу именно тут.
+      </p>
+      <img class="area" src="../images/Severniy.jpeg" alt="Мой микрорайон" />
+      <p class="paragraph__two">
+        На данный момент я являюсь инвалидом и живу на пособие по инвалидности
+        (3 группа). На этот курс я пришел по обьявлению в интернете об учебе,
+        которое оплачивает государство, условиями зачисления были наличие
+        высшего образования и как раз таки инвалидность. У меня был диплом о ВО
+        государственного образца и мне одобрили заявление. Спасибо огромное,
+        благодаря этому курсу я могу теперь освоить профессию, о которой всегда
+        мечтал, а мечтал я версать сайты с нуля. Лет 10-15 назад я создавал
+        сайты на бесплатных онлайн конструкторах, копирайтил и рерайтил контент,
+        у меня в руках были естественно не такие продвинутые знания, какие мы
+        проходим сейчас при прохождении этого курса и сайты были скажем так не
+        очень крутые. Но мое внимание привлекало в конструкторах то, что там
+        если уметь версать то можно было бы избавиться от стандартного шаблона и
+        загрузить свой код. Поэтому для меня писать граммотный и чистый код
+        являеться приоритетом в ИТ.
+      </p>
+    </div>
+    </main>
+    <footer class="footer__end">
+      <p class="copyright">
+        2022 &copy; <span class="footer__text">учебный центр</span>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -78,6 +78,10 @@ html {
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .menu {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -94,6 +98,7 @@ html {
         flex-direction: column;
         align-self: center;
         gap: 10px;
+        margin-right: 0px;
     }
     
     .button__main {

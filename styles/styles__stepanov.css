@@ -1,0 +1,256 @@
+@import url('../styles/header.css');
+@import url('../styles/footer.css');
+
+h1 {
+    color:rgb(7, 199, 39);
+    font-size: 30px;
+}
+
+h2 {
+    color:rgb(7, 199, 39);
+    font-size: 25px;
+}
+
+b {
+    color:blue;
+    font-size: 20px;
+}
+ul {
+    color:red;
+    font-size: 15px;
+}
+
+ol {
+    color:red;
+    font-size: 15px;
+}
+
+table, tr, th,td {
+    border: 3px solid green;
+}
+
+td {
+    align-items: center;
+    justify-content: center;
+}
+
+.class {
+    color:rgb(127, 8, 238);
+}
+
+.new-class {
+    color:darkblue;
+}
+
+#sid {
+    font-weight: bold;
+}
+
+table {
+    margin: 1px 5px 10px 50px;
+    display: inline-block;
+}
+
+.tablica {
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.picture {
+    max-width: 1500px;
+    width: 100%;
+    height: 300px;
+}
+
+.border-input {
+    border: 3px double blue;
+    border-radius: 5px;
+}
+
+.form__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.paragraph__one {
+    font-size: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.paragraph__one::first-letter {
+    color: rgb(255, 255, 255);
+    background-color: #213B7E;
+    font-size: 150px;
+}
+
+.paragraph__two {
+    font-size: 20px;
+    margin: 0 auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 200px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.paragraph__two::first-letter {
+    color: rgb(255, 255, 255);
+    background-color: #213B7E;
+    font-size: 150px;
+}
+
+.content {
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.area {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.me__photo {
+    max-width: 316px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .heading {
+        width: calc(100% - 40px);
+    }
+
+    .end {
+        width: calc(100% - 40px);
+
+    }
+
+    .content {
+        min-height: 80px;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .paragraph__one {
+        font-size: 20px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .Me__photo {
+        max-width: 300px;
+        width: 100%;
+    }
+    
+    .paragraph__one::first-letter {
+        color: rgb(255, 255, 255);
+        background-color: #213B7E;
+        font-size: 100px;
+    }
+    
+    .paragraph__two {
+        font-size: 20px;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 200px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: 100%;
+    }
+    
+    .paragraph__two::first-letter {
+        color: rgb(255, 255, 255);
+        background-color: #213B7E;
+        font-size: 100px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .heading {
+        width: calc(100% - 40px);
+    }
+
+    .end {
+        width: calc(100% - 40px);
+
+    }
+
+    .content {
+        width: calc(100% - 40px);
+        flex-direction: column;
+        height: fit-content;
+        gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .paragraph__one {
+        font-size: 20px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1200px;
+        width: 100%;
+    }
+    
+    .paragraph__one::first-letter {
+        color: rgb(255, 255, 255);
+        background-color: #213B7E;
+        font-size: 50px;
+    }
+    
+    .paragraph__two {
+        font-size: 20px;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 200px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: 100%;
+    }
+    
+    .paragraph__two::first-letter {
+        color: rgb(255, 255, 255);
+        background-color: #213B7E;
+        font-size: 50px;
+    }
+
+    .Me__photo {
+        max-width: 300px;
+        width: 100%;
+    }
+    
+}

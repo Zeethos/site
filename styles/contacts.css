@@ -23,31 +23,41 @@ html {
     flex-grow: 1;
 }
 
+
 .content__title {
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    margin: 30px 0 25px 286px;
+    margin: 33px 0px 25px 286px;
+    margin-top: 33px;
+    width: 236px;
+    height: 35px;
+    left: 386px;
+    top: 113px;
+    font-size: 30px;
+    line-height: 35px;
     display: flex;
     align-items: center;
+    margin-left: 286px;
 }
 
 .map-photo {
-    width: 1268px;
-    height: 370px;
+    max-width: 1268px;
+    width: calc(100% - 43px);
+    height: auto;
     left: 86px;
     top: 173px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .main__paragraph {
-    width: 185px;
-    height: 29px;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     margin-left: 288px;
 }
 
@@ -57,6 +67,104 @@ html {
 
 .paragraph__tel {
     margin-bottom: 420px;
-    margin-left: 288px;
     text-decoration: underline;
+    margin-left: 288px;
+}
+
+@media screen and (max-width: 1023px) {
+    .map-photo {
+        height: auto;
+        width: calc(100% - 50px);
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__title {
+    max-width: 550px;
+    width: 100%;
+    margin: 20px 0 25px 0;
+
+}
+
+.main__paragraph {
+    width: 185px;
+    height: 29px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin-left: -288px;
+}
+
+.paragraph {
+    margin-left: -288px;
+}
+
+.paragraph__tel {
+    margin-bottom: 420px;
+    margin-left: -288px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1023px) {
+    .content {
+        width: calc(100% - 40px);
+    }
+
+    .map-photo {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content__title {
+        max-width: 550px;
+        width: 100%;
+        margin: 20px 0 25px 0;
+    }
+
+    .map-photo {
+        height: auto;
+        width: calc(100% - 50px);
+    }
+
+    .main__paragraph {
+        width: 185px;
+        height: 29px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    .paragraph {
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 185px;
+        height: 29px;
+    }
+    
+    .paragraph__tel {
+        margin-bottom: 420px;
+        margin-left: 0px;
+        text-decoration: underline;
+        width: 185px;
+        height: 29px;
+    }
 }

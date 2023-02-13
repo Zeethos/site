@@ -34,8 +34,10 @@ html {
 
 .video {
     box-sizing: border-box;
-    width: 820px;
-    height: 549.33px;
+    max-width: 820px;
+    width: 100%;
+    max-height: 549.33px;
+    height: 100%;
     border: 2px solid #EA5D21;
     margin-bottom: 313.67px;
 }
@@ -49,4 +51,26 @@ html {
     line-height: 29px;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .content {
+        width: calc(100% - 40px);
+    }
+
+    .map-photo {
+        margin-left: 0px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        width: calc(100% - 40px);
+    }
+
+    .map-photo {
+        margin-left: 0px;
+        height: auto;
+    }
 }

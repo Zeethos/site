@@ -50,8 +50,81 @@ html {
     border-radius: 20px;
 }
 
+.name__student__Stepanov {
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.link__student {
+    text-decoration: none;
+    color: black;
+}
+
 .center__li {
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.name__student {
+    text-align: center;
+    position: relative;
+}
+
+.chip {
+    background-color: #3AA828;
+    color: #FFFFFF;
+    position: absolute;
+    width: 94px;
+    height: 24px;
+    left: 595px;
+    top: 140px;
+    background: #3AA828;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.photo__student {
+    width: 200px;
+    height: 270px;
+}
+
+@media screen and (max-width: 1024px) {
+    .chip {
+        background-color: #3AA828;
+        color: #FFFFFF;
+        position: absolute;
+        width: 94px;
+        height: 24px;
+        left: 420px;
+        top: 140px;
+        background: #3AA828;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .chip {
+        background-color: #3AA828;
+        color: #FFFFFF;
+        position: absolute;
+        width: 94px;
+        height: 24px;
+        left: 160px;
+        top: 680px;
+        background: #3AA828;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 }
