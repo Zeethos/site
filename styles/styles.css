@@ -212,7 +212,7 @@ html {
 }
 
 .text__title__paragraph:nth-of-type(2n) {
-    margin: 10px 0 0 0;
+    margin: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -226,6 +226,7 @@ html {
     font-weight: 400;
     font-size: 18px;
     color: #000000;
+    margin: 10px 0 0 0;
 }
 
 .content__bottom {
@@ -338,6 +339,7 @@ html {
         flex-direction: column;
         align-self: center;
         gap: 10px;
+        margin-right: 0px;
     }
     
     .button__main {
