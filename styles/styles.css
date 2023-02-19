@@ -340,7 +340,7 @@ html {
     .burger__item__one {
         transform-origin: 0% 0%;
         transition: transform 0.4s ease-in-out;
--    }
+    }
 
     .burger__item__two {
         transition: transform 0.2s ease-in-out;
