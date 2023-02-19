@@ -50,6 +50,10 @@ html {
     border-radius: 20px;
 }
 
+.position__stepanov {
+    position: relative;
+}
+
 .name__student__Stepanov {
     text-align: center;
     text-decoration: none;
@@ -60,9 +64,6 @@ html {
     color: black;
 }
 
-.active__link__student {
-    position: relative;
-}
 
 .center__li {
     display: flex;
@@ -80,8 +81,8 @@ html {
     position: absolute;
     width: 94px;
     height: 24px;
-    left: 594px;
-    top: 140px;
+    left: 120px;
+    top: -25px;
     border-radius: 20px;
     text-align: center;
     align-items: center;
@@ -93,40 +94,4 @@ html {
 .photo__student {
     width: 200px;
     height: 270px;
-}
-
-@media screen and (max-width: 1024px) {
-    .chip {
-        background-color: #3AA828;
-        color: #FFFFFF;
-        position: absolute;
-        width: 94px;
-        height: 24px;
-        left: 555px;
-        top: 555px;
-        background: #3AA828;
-        border-radius: 20px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .chip {
-        background-color: #3AA828;
-        color: #FFFFFF;
-        position: absolute;
-        width: 94px;
-        height: 24px;
-        left: 111px;
-        top: 111px;
-        background: #3AA828;
-        border-radius: 20px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
 }
