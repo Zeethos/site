@@ -52,13 +52,16 @@ html {
 
 .name__student__Stepanov {
     text-align: center;
-    position: relative;
     text-decoration: none;
 }
 
 .link__student {
     text-decoration: none;
     color: black;
+}
+
+.active__link__student {
+    position: relative;
 }
 
 .center__li {
@@ -69,7 +72,6 @@ html {
 
 .name__student {
     text-align: center;
-    position: relative;
 }
 
 .chip {
@@ -78,14 +80,14 @@ html {
     position: absolute;
     width: 94px;
     height: 24px;
-    left: 595px;
+    left: 594px;
     top: 140px;
-    background: #3AA828;
     border-radius: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
+    z-index: 1;
 }
 
 .photo__student {
@@ -100,8 +102,8 @@ html {
         position: absolute;
         width: 94px;
         height: 24px;
-        left: 420px;
-        top: 140px;
+        left: 555px;
+        top: 555px;
         background: #3AA828;
         border-radius: 20px;
         text-align: center;
@@ -118,8 +120,8 @@ html {
         position: absolute;
         width: 94px;
         height: 24px;
-        left: 160px;
-        top: 680px;
+        left: 111px;
+        top: 111px;
         background: #3AA828;
         border-radius: 20px;
         text-align: center;

@@ -30,7 +30,7 @@ html {
     margin: 0;
     list-style-type: none;
     flex-wrap: wrap;
-    margin-right: -100px;
+    margin-right: 0px;
 
 }
 
@@ -71,6 +71,115 @@ html {
     cursor: pointer;
 }
 
+/* PopUp */
+
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    margin: 0 auto;
+}
+
+.popup__close {
+    position: absolute;
+    right: -45px;
+    top: -45px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.popup__close:hover {
+    opacity: .7;
+}
+
+.login-popup {
+    position: relative;
+    z-index: 2;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    height: 418px;
+    border: 1px solid #213B7E;
+    padding: 26px 28px 56px;
+    background-color: #FFFFFF;
+    margin-top: -880px;
+    margin-left: 32%;
+}
+
+.login-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+}
+
+.login-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form > input {
+    width: 100%;
+    max-width: 444px;
+    min-height: 35px;
+    margin-bottom: 56px;
+    border: 1px solid #213B7E;
+}
+
+.login-input {
+    width: 444px;
+    min-height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 10px;
+}
+
+.login-password {
+    width: 444px;
+    min-height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 10px;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 50px;
+    background: #EA6113;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+}
+
+.show-popup {
+    display: flex;
+}
+
+.burger__popup {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
     .header {
         min-height: 80px;
@@ -99,9 +208,116 @@ html {
         align-self: center;
         gap: 10px;
         margin-right: 0px;
+        display: none;
+        margin-left: 0px;
     }
     
     .button__main {
         margin-bottom: 15px;
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        height: 40px;
+        width: 48px;
+        z-index: 2;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: auto;
+        
+    }
+    
+    .burger__item {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+    }
+
+    .burger__item__one {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+-    }
+
+    .burger__item__two {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .burger__item__free {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .burger__item__one__opened {
+        transform: rotate(45deg);
+    }
+
+    .burger__item__two__opened {
+        transform: scale(0);
+    }
+
+    .burger__item__free__opened {
+        transform: rotate(-45deg);
+    }
+
+    .burger__popup {
+        width: fit-content;
+        height: 250px;
+        position: fixed;
+        background-color: #213B7E;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: -15px;
+        transform: translateX(-190px);
+        transition: .3s ease;
+    }
+
+    .burger__popup__opened {
+        transform: translateX(0px);
+    }
+
+    .burger__menu__full {
+        margin-right: auto;
+    }
+
+    .logo__burger {
+        width: 47px;
+        height: 47px;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+
+    .menu__burger {
+        list-style-type: none;
+        background-color: #213B7E;
+    }
+
+    .button__main__burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #EA5D21 ;
+        font-size: 18px;
+        width: 100px;
+        height: 35px;
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-left: 35px;
+    }
+
+    .burger__menu__full {
+        position: absolute;
+        left: 35px;
     }
 }

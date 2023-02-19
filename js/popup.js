@@ -1,6 +1,7 @@
 const buttonMain = document.querySelector('.button__main');
 const overlay = document.querySelector('.overlay');
 const closeButton = document.querySelector('.popup__close');
+const buttonBurger = document.querySelector('.button__main__burger');
 
 if (localStorage.getItem('popupState') === 'opened') {
     openPopup();
@@ -16,6 +17,7 @@ function closePopup() {
     localStorage.setItem('popupState', 'closed');
 }
 
+buttonBurger.addEventListener('click', openPopup);
 buttonMain.addEventListener('click', openPopup);
 closeButton.addEventListener('click', closePopup);
 overlay.addEventListener('click', (e) => {
