@@ -41,16 +41,19 @@ html {
     margin-left: 286px;
 }
 
-.map-photo {
-    max-width: 1268px;
-    width: calc(100% - 43px);
-    height: auto;
-    left: 86px;
-    top: 173px;
+.map {
+    width: 1268px;
+    height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+
+.map__container {
+    max-width: 1268px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .main__paragraph {
@@ -58,25 +61,30 @@ html {
     font-weight: 400;
     font-size: 25px;
     line-height: 29px;
-    margin-left: 288px;
-}
-
-.paragraph {
-    margin-left: 288px;
 }
 
 .paragraph__tel {
     margin-bottom: 420px;
     text-decoration: underline;
+}
+
+.container__contacts {
     margin-left: 288px;
 }
 
+@media screen and (max-width: 1268px) {
+    .map {
+        width: 1000px;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 1023px) {
-    .map-photo {
+    .map {
         height: auto;
         width: calc(100% - 50px);
     }
-}
+
 
 .content {
     display: flex;
@@ -110,6 +118,7 @@ html {
     margin-left: -288px;
     text-decoration: underline;
 }
+}
 
 @media screen and (max-width: 1023px) {
     .content {
@@ -134,7 +143,7 @@ html {
         margin: 20px 0 25px 0;
     }
 
-    .map-photo {
+    .map {
         height: auto;
         width: calc(100% - 50px);
     }
@@ -166,5 +175,9 @@ html {
         text-decoration: underline;
         width: 185px;
         height: 29px;
+    }
+
+    .container__contacts {
+        margin-left: -50px;
     }
 }

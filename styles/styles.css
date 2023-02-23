@@ -197,6 +197,15 @@ html {
     font-style: oblique;
 }
 
+.quotes {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    width: 28px;
+    height: 80px;
+}
+
 /* footer */
 
 .footer__end {

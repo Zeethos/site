@@ -36,12 +36,12 @@
     <div class="overlay">
       <div class="login-popup">
         <img
-        src="../images/close.svg"
-        alt="Иконка закрытия"
-        class="popup__close"
-      />
+          src="../images/close.svg"
+          alt="Иконка закрытия"
+          class="popup__close"
+        />
         <h2 class="login-heading">Войти на сайт</h2>
-        
+
         <form class="login-form">
           <input
             class="login-input"
@@ -62,36 +62,48 @@
       </div>
     </div>
     <div class="burger__menu__full">
-    <div class="burger">
-      <div class="burger__item burger__item__one"></div>
-      <div class="burger__item burger__item__two"></div>
-      <div class="burger__item burger__item__free"></div>
+      <div class="burger">
+        <div class="burger__item burger__item__one"></div>
+        <div class="burger__item burger__item__two"></div>
+        <div class="burger__item burger__item__free"></div>
+      </div>
+      <div class="burger__popup">
+        <img class="logo__burger" src="../images/logo.svg" alt="Логотип" />
+        <ul class="menu__burger">
+          <li>
+            <a href="../index.html" class="menu__link">Главная</a>
+          </li>
+          <li>
+            <a href="../pages/students.html" class="menu__link">Студенты</a>
+          </li>
+          <li>
+            <a href="../pages/about.html" class="menu__link">О курсе</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link active-link">Контакты</a>
+          </li>
+        </ul>
+        <a class="button__main__burger">Войти</a>
+      </div>
     </div>
-    <div class="burger__popup">
-      <img class="logo__burger" src="../images/logo.svg" alt="Логотип" />
-      <ul class="menu__burger">
-        <li>
-          <a href="../index.html" class="menu__link">Главная</a>
-        </li>
-        <li>
-          <a href="../pages/students.html" class="menu__link">Студенты</a>
-        </li>
-        <li>
-          <a href="../pages/about.html" class="menu__link">О курсе</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link active-link">Контакты</a>
-        </li>
-      </ul>
-    <a class="button__main__burger">Войти</a>
-    </div>
-  </div>
     <main class="content">
       <h1 class="content__title">Как нас найти 🗺️️</h1>
-      <img class="map-photo" src="../images/goole-map1.png" alt="Карта" />
+      <div class="map__container">
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152238.98800190323!2d30.331393889713528!3d59.91108201414883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963110ebe9ea5b%3A0x86b0025c5a84a071!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LsuLCAyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDAw!5e0!3m2!1sru!2sru!4v1677125506963!5m2!1sru!2sru"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+      <div class="container__contacts">
       <p class="main__paragraph">Наши контакты</p>
-      <p class="paragraph"> Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+      <p class="paragraph">
+        Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000
+      </p>
       <p class="paragraph__tel">Тел: +7 (812) 555-55-55</p>
+    </div>
     </main>
     <footer class="footer__end">
       <p class="copyright">
